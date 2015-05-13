@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:layout_gravity="center"
+    android:paddingRight="35dp"
+    android:paddingLeft="35dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/firstPlayerEditName"
+        android:hint="@string/first_player_name_hint"
+        style="@style/editPlayerNameStyle"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/secondPlayerEditName"
+        android:layout_below="@+id/firstPlayerEditName"
+        style="@style/editPlayerNameStyle"
+        android:hint="@string/second_player_name_hint" />
+
+    <TextView
+        android:id="@+id/playerMoveLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_move_lbl"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/secondPlayerEditName"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/toeChecked"
+        android:textSize="22sp" />
+
+
+    <CheckedTextView
+        android:id="@+id/toeChecked"
+        android:text="O"
+        android:textSize="35sp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/secondPlayerEditName"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:checked="true"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/checked_textview_selector"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <CheckedTextView
+        android:id="@+id/ticChecked"
+        android:text="X"
+        android:textSize="35sp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/secondPlayerEditName"
+        android:layout_toLeftOf="@+id/toeChecked"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/checked_textview_selector"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game_lbl"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/edittext_background" />
+
+</RelativeLayout>

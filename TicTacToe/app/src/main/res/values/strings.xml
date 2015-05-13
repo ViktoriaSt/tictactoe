@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="one_player_lbl">One player</string>
+    <string name="two_players_lbl">Two players</string>
+    <string name="first_player_name_hint_with_comp">Write your name</string>
+    <string name="first_player_name_hint">Player 1 - \"X\"</string>
+    <string name="second_player_name_hint">Player 2 - \"O\"</string>
+    <string name="computer_lbl">Computer</string>
+    <string name="your_move_lbl">Your move:</string>
+    <string name="start_game_lbl">Start game</string>
+    <string name="write_name_message">Please, write your name.</string>
+    <string name="name_message_error">The name should be different.</string>
+    <string name="user_winner_message">is a winner.</string>
+    <string name="nobody_wins_message">The field is filled in.</string>
+</resources>

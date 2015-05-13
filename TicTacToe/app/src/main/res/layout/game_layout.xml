@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@android:color/background_dark">
+
+    <TextView
+        android:id="@+id/playerOneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/playerTwoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2"
+        android:layout_below="@+id/playerOneName"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:id="@+id/cell_00"
+        android:layout_below="@+id/playerTwoName"
+        android:layout_centerVertical="true"
+        style="@style/cellStyle" />
+
+    <TextView
+        android:id="@+id/cell_01"
+        android:layout_toRightOf="@+id/cell_00"
+        android:layout_alignBaseline="@+id/cell_00"
+        style="@style/cellStyle" />
+
+    <TextView
+        android:id="@+id/cell_02"
+        android:layout_toRightOf="@+id/cell_01"
+        android:layout_alignBaseline="@+id/cell_00"
+        style="@style/cellStyle" />
+
+
+    <TextView
+        android:id="@+id/cell_10"
+        android:layout_below="@+id/cell_00"
+        style="@style/cellStyle" />
+
+    <TextView
+        android:id="@+id/cell_11"
+        android:layout_alignBaseline="@+id/cell_10"
+        android:layout_toRightOf="@+id/cell_10"
+        style="@style/cellStyle" />
+
+    <TextView
+        android:id="@+id/cell_12"
+        android:layout_alignBaseline="@+id/cell_10"
+        android:layout_toRightOf="@id/cell_11"
+        style="@style/cellStyle" />
+
+    <TextView
+        android:id="@+id/cell_20"
+        android:layout_below="@id/cell_10"
+        style="@style/cellStyle" />
+
+    <TextView
+        android:id="@+id/cell_21"
+        android:layout_alignBaseline="@+id/cell_20"
+        android:layout_toRightOf="@+id/cell_20"
+        style="@style/cellStyle" />
+
+    <TextView
+        android:id="@+id/cell_22"
+        android:layout_toRightOf="@+id/cell_21"
+        android:layout_alignBaseline="@+id/cell_20"
+        style="@style/cellStyle" />
+</RelativeLayout>

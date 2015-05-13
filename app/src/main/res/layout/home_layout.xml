@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:background="@android:color/background_dark">
+
+    <Button
+        android:id="@+id/onePlayrtButton"
+        android:text="@string/one_player_lbl"
+        android:layout_marginBottom="5dp"
+        style="@style/menuButtonStyle" />
+
+    <Button
+        android:id="@+id/twoPlayersButton"
+        android:text="@string/two_players_lbl"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/onePlayrtButton"
+        style="@style/menuButtonStyle" />
+</RelativeLayout>
